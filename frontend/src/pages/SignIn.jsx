@@ -18,7 +18,7 @@ const [err,setErr]=useState("")
     setErr("")
     setLoading(true)
 try {
-  let result=await axios.post(`${serverUrl}/api/auth/signin`,{
+  let result=await axios.post(`${serverUrl}/api/auth/login`,{
    email,password
   },{withCredentials:true} )
   console.log("Signin successful:", result.data);
